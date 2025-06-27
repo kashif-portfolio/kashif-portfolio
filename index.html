@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kashif - Frontend Developer</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kashif's Portfolio</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="firstsection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Kashif</span><br />
+          and I am a Passionate <span id="element"></span>
+          <div class="buttons">
+            <a href="Muhammad_Kashif.pdf" download>
+              <button id="btn">Download Resume</button>
+            </a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="pg.png" alt="Developer Illustration" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a beginner-level Frontend Developer from Khanpur with a strong interest in building simple and responsive websites.
+    I have learned HTML, CSS, and basic JavaScript, and created small projects to practice my skills.
+    I am eager to gain real-world experience and continue enhancing my frontend development skills.
+    You can view my work on
+    <a href="https://github.com/kashif-portfolio" target="_blank">GitHub</a>
+    and connect with me on
+    <a href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309" target="_blank">LinkedIn</a>.
+  </p>
+</section>
+
+      <hr />
+
+      <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/kashif-portfolio/greensphere-project"
+              target="_blank"
+            >
+              🌱 GreenSphere (Final Year Project)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/kashif-portfolio/tic-tac-toe"
+              target="_blank"
+            >
+              🎮 Tic Tac Toe Game
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/kashif-portfolio/amazon-clone"
+              target="_blank"
+            >
+              🛒 Amazon Clone
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/kashif-portfolio/Scissor-Paper-Game"
+              target="_blank"
+            >
+              ✂️ Scissor-Paper Game
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>
+          You can reach me via email at
+          <a href="mailto:kashifabbasi4224@gmail.com"
+            >kashifabbasi4224@gmail.com</a
+          >
+          or on LinkedIn.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Kashif's Portfolio</h3>
+          <p>Frontend Developer from Khanpur, Pakistan</p>
+        </div>
+
+        <div class="footer-second">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-third">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:kashifabbasi4224@gmail.com">Email</a></li>
+            <li>
+              <a href="https://github.com/kashif-portfolio" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        © 2025 www.kashif-portfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer"],
+        typeSpeed: 30,
+      });
+    </script>
+  </body>
+</html>
