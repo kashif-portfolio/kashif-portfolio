@@ -1,157 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kashif - Frontend Developer</title>
-    <link rel="stylesheet" href="portfolio.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left">Kashif's Portfolio</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashif - UI/UX Designer & Frontend Developer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav>
+      <div class="left">Kashif.dev</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="firstsection">
+      <div class="leftSection">
+        Hi, my name is <span class="purple">Kashif</span><br />
+        and I am a Passionate <br><span id="element"></span>
+        <div class="buttons">
+          <a href="Kashif-Abbasi-UIUX-Frontend-Resume.pdf" download>
+            <button id="btn">Download Resume</button>
+          </a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="hero.jpg" alt="Muhammad Kashif - UI/UX & Frontend Developer" />
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Frontend Developer and UI/UX Designer with a strong passion for building modern, high-performance, and
+        pixel-perfect responsive web applications.
+        With professional experience in translating design wireframes into clean, interactive frontend code, I
+        specialize in crafting seamless user interfaces using HTML, CSS, JavaScript, and React frameworks.
+      </p>
+      <p>
+        You can view my source code on
+        <a href="https://github.com/kashif-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+        and connect with me on
+        <a href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>.
+      </p>
+    </section>
+
+    <!-- SKILLS & PROFESSIONAL PROFILES CARDS -->
+    <section class="skills-overview">
+      <h2>My Expertise & Profiles</h2>
+      <div class="skills-container">
+
+        <!-- Card 1: UI/UX Design Stack (Figma Focused) -->
+        <div class="skills-card design-branch">
+          <div class="card-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive wireframes, seamless user flows, and visually stunning interactive interfaces.
+            Specialized in turning complex user problems into human-centric digital solutions.</p>
+          <div class="tech-badges">
+            <span>Figma</span>
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+            <span>User Research</span>
+            <span>Information Architecture</span>
+          </div>
+          <a href="https://www.behance.net/muhammadkashif260" target="_blank" rel="noopener noreferrer"
+            class="profile-btn bnc-btn">View Behance Portfolio →</a>
+        </div>
+
+        <!-- Card 2: Frontend Development Stack -->
+        <div class="skills-card dev-branch">
+          <div class="card-icon">💻</div>
+          <h3>Frontend Development</h3>
+          <p>Translating modern design files into high-performance, responsive, clean, and interactive code. Building
+            manageable state logic and smooth user journeys across devices.</p>
+          <div class="tech-badges">
+            <span>HTML5 & CSS3</span>
+            <span>JavaScript (ES6+)</span>
+            <span>React.js</span>
+            <span>Tailwind CSS</span>
+            <span>Axios & REST APIs</span>
+            <span>Git & GitHub</span>
+          </div>
+          <a href="https://github.com/kashif-portfolio" target="_blank" rel="noopener noreferrer"
+            class="profile-btn git-btn">View GitHub Code →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- END-TO-END PRODUCT ENGINEERING  -->
+    <section class="academic-lifecycle">
+      <div class="lifecycle-box">
+        <div class="lifecycle-badge">Academic & Systems Engineering</div>
+        <h2>End-to-End Product Development</h2>
+        <p class="lifecycle-intro">
+          Working as an individual engineer on complex academic software systems has equipped me with the foundational
+          capabilities to own the entire product life cycle from scratch to execution.
+        </p>
+
+        <div class="lifecycle-grid">
+          <!-- Phase 1 -->
+          <div class="lifecycle-item">
+            <h4>📋 Requirements & Research Phase</h4>
+            <p>Independently conducted thorough user domain research, compiled rigorous Software Requirements
+              Specifications (SRS), and tracked core system bounds from inception.</p>
+          </div>
+          <!-- Phase 2 -->
+          <div class="lifecycle-item">
+            <h4>📐 Architecture & Design Diagrams</h4>
+            <p>Designed comprehensive structural layouts including detailed Use Case diagrams, Class structural
+              blueprints, and detailed architecture components mapping.</p>
+          </div>
+          <!-- Phase 3 -->
+          <div class="lifecycle-item">
+            <h4>🔀 User Flows & Interaction Designs</h4>
+            <p>Engineered interactive user journeys, micro-interaction flows, dynamic states, and seamless behavioral
+              wireframes to guarantee high-fidelity UX clarity.</p>
+          </div>
+          <!-- Phase 4 -->
+          <div class="lifecycle-item">
+            <h4>🗄️ Database Design & Schemas</h4>
+            <p>Structured transactional logical schemas, mapped out Entity-Relationship Diagrams (ERD), and designed
+              robust relational database frameworks for data safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+
+        <!-- React Project 1 -->
+        <div class="project-card dynamic-project">
+          <h3>🛒 Product Search & Filter System</h3>
+          <p>A dynamic web application built with <strong>React</strong> and <strong>Tailwind CSS</strong>. It fetches
+            live catalog data from the DummyJSON API using Axios, featuring real-time category switching and instant
+            product searching.</p>
+          <a href="https://github.com/kashif-portfolio/ecommerce-product-filter" target="_blank"
+            rel="noopener noreferrer">View Repository →</a>
+        </div>
+
+        <!-- React Project 2 -->
+        <div class="project-card dynamic-project">
+          <h3>📝 Interactive CRUD Enquiry Manager</h3>
+          <p>A full frontend CRUD application built in <strong>React</strong>. Manages user records dynamically in state
+            with secure validation checks to prevent duplicate emails or phone numbers during insert and update
+            operations.</p>
+          <a href="https://github.com/kashif-portfolio/interactive-crud-app" target="_blank"
+            rel="noopener noreferrer">View Repository →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>🌱 GreenSphere (Academic Project)</h3>
+          <p>A web application built to focus on sustainable environment management and handling requirements tracking.
+          </p>
+          <a href="https://github.com/kashif-portfolio/greensphere-project" target="_blank"
+            rel="noopener noreferrer">View Repository →</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <h3>🎮 Tic Tac Toe Game</h3>
+          <p>An interactive classic game built with JavaScript, managing live user states and dynamically calculating
+            win/draw logic.</p>
+          <a href="https://github.com/kashif-portfolio/tic-tac-toe" target="_blank" rel="noopener noreferrer">View
+            Repository →</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <h3>🛒 Amazon Clone</h3>
+          <p>A multi-page static landing page clone mimicking core retail layout components and fully responsive styling
+            grids.</p>
+          <a href="https://github.com/kashif-portfolio/amazon-clone" target="_blank" rel="noopener noreferrer">View
+            Repository →</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <h3>✂️ Rock Paper Scissors Game</h3>
+          <p>A logic-driven browser application that tracks real-time scores against an automated computer script
+            algorithm.</p>
+          <a href="https://github.com/kashif-portfolio/Scissor-Paper-Game" target="_blank"
+            rel="noopener noreferrer">View Repository →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Whether you want to discuss a new project, share ideas, or just say hello, my inbox is always open.
+        Reach me via email at
+        <a href="mailto:kashifabbasi4224@gmail.com">kashifabbasi4224@gmail.com</a>
+        or connect through my social platforms.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Kashif's Portfolio</h3>
+        <p>Frontend Developer & UI/UX Designer from Pakistan</p>
+      </div>
+
+      <div class="footer-second">
+        <h4>Navigate</h4>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
 
-    <main>
-      <section id="home" class="firstsection">
-        <div class="leftSection">
-          Hi, my name is <span class="purple">Kashif</span><br />
-          and I am a Passionate <span id="element"></span>
-          <div class="buttons">
-            <a href="Muhammad_Kashif.pdf" download>
-              <button id="btn">Download Resume</button>
-            </a>
-          </div>
-        </div>
-        <div class="rightSection">
-          <img src="pg.png" alt="Developer Illustration" />
-        </div>
-      </section>
-
-      <hr />
-
-      <section id="about" class="about">
-  <h2>About Me</h2>
-  <p>
-    I am a beginner-level Frontend Developer from Khanpur with a strong interest in building simple and responsive websites.
-    I have learned HTML, CSS, and basic JavaScript, and created small projects to practice my skills.
-    I am eager to gain real-world experience and continue enhancing my frontend development skills.
-    You can view my work on
-    <a href="https://github.com/kashif-portfolio" target="_blank">GitHub</a>
-    and connect with me on
-    <a href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309" target="_blank">LinkedIn</a>.
-  </p>
-</section>
-
-      <hr />
-
-      <section class="projects" id="projects">
-        <h2>My Projects</h2>
+      <div class="footer-third">
+        <h4>Connect</h4>
         <ul>
-          <li>
-            <a
-              href="https://github.com/kashif-portfolio/greensphere-project"
-              target="_blank"
-            >
-              🌱 GreenSphere (Final Year Project)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/kashif-portfolio/tic-tac-toe"
-              target="_blank"
-            >
-              🎮 Tic Tac Toe Game
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/kashif-portfolio/amazon-clone"
-              target="_blank"
-            >
-              🛒 Amazon Clone
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/kashif-portfolio/Scissor-Paper-Game"
-              target="_blank"
-            >
-              ✂️ Scissor-Paper Game
-            </a>
-          </li>
+          <li><a href="mailto:kashifabbasi4224@gmail.com">Email</a></li>
+          <li><a href="https://github.com/kashif-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
-      </section>
-
-      <hr />
-
-      <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>
-          You can reach me via email at
-          <a href="mailto:kashifabbasi4224@gmail.com"
-            >kashifabbasi4224@gmail.com</a
-          >
-          or on LinkedIn.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer">
-        <div class="footer-first">
-          <h3>Kashif's Portfolio</h3>
-          <p>Frontend Developer from Khanpur, Pakistan</p>
-        </div>
-
-        <div class="footer-second">
-          <h4>Navigate</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-third">
-          <h4>Connect</h4>
-          <ul>
-            <li><a href="mailto:kashifabbasi4224@gmail.com">Email</a></li>
-            <li>
-              <a href="https://github.com/kashif-portfolio" target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/muhammad-kashif-abbasi-981878309"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
+    </div>
 
-      <div class="footer-rights">
-        © 2025 www.kashif-portfolio.com | All rights reserved
-      </div>
-    </footer>
+    <div class="footer-rights">
+      © 2026 www.kashif-portfolio.com | All rights reserved
+    </div>
+  </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
       var typed = new Typed("#element", {
-        strings: ["Web Developer"],
-        typeSpeed: 30,
+        strings: ["UI/UX Designer", "Frontend Developer"],
+        typeSpeed: 80,
+        backSpeed: 30,
+        loop: true
       });
     </script>
-  </body>
+</script>
+</body>
+
 </html>
